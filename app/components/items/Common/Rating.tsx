@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import React from 'react'
 
 
@@ -34,13 +35,13 @@ function printValueStar(value: number): React.ReactNode {
 }
 const Rating = ({img,value,coment,name,position}:RatingProps) => {
   return (
-    <div className='flex justify-between gap-15 py-5 w-full max-w-[800px]'>
+    <div className='flex sm:flex-row flex-col justify-center sm:justify-between gap-15 py-5 w-full max-w-[800px]'>
       <div className="flex justify-center">
-        <img src={img} alt={name} className='w-[150px] rounded-[50%]'/>
+        <Image src={img} alt={name} className='w-[150px] rounded-[50%]'/>
       </div>
       <div className="flex justify-between flex-col w-full">
         {/* Rating */}
-        <div className="flex justify-start">
+        <div className="flex justify-center sm:justify-start">
           {printValueStar(value)}
         </div>
         <div className="flex justify-start">

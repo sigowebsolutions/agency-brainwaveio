@@ -1,10 +1,5 @@
 import { Facebook, Instagram, Linkedin, Twitter } from "lucide-react";
-import AdvantagesChooseUs from "../items/Common/AdvantagesChooseUs";
-import ButtonLink from "../items/Common/ButtonLink";
-import Card from "../items/Common/Card";
 import { CTASection } from "../items/Common/CTASection";
-import Rating from "../items/Common/Rating";
-import TitleSection from "../items/Common/TitleSection";
 
 const listLinks = [
     {
@@ -53,7 +48,7 @@ export default function Footer() {
                     <CTASection/>
                     <div className="border-b pb-10 mb-10 border-slate-700 w-full"></div>
 
-                    <div className="flex flex-row justify-between w-full py-10 gap-8">
+                    <div className="flex flex-col sm:flex-row justify-between w-full py-10 gap-8">
                         <div className="flex flex-col justify-start items-start gap-8 text-left">
                             <p className="text-4xl font-bold">
                                 Brainwave.io
@@ -70,9 +65,9 @@ export default function Footer() {
                                 <Linkedin/>
                             </div>
                         </div>
-                        <div className="flex flex-row justify-between w-full">
+                        <div className="flex flex-col sm:flex-row justify-between  w-full">
                             {listLinks.map((link,index) => (
-                                <div key={index} className="text-left justify-start w-full items-start">
+                                <div key={index} className="text-center justify-center sm:justify-start w-full items-center sm:items-start py-5 sm:py-0">
                                     <p className="mb-5 text-slate-500 font-bold">{link.title}</p>
                                     <ul className="flex flex-col gap-4">
                                         {link.links.map((e, index) => (

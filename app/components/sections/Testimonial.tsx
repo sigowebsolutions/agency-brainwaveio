@@ -1,6 +1,4 @@
-import AdvantagesChooseUs from "../items/Common/AdvantagesChooseUs";
-import ButtonLink from "../items/Common/ButtonLink";
-import TitleSection from "../items/Common/TitleSection";
+import Image from "next/image";
 
 export default function Testimonial() {
     return (
@@ -13,7 +11,7 @@ export default function Testimonial() {
                         I’d <br/> recommend this product to beginners and <br/> advanced users.”
                     </p>
                     <div className="flex flex-col gap-2 items-center text-white">
-                        <img src="/assets/items/profile-testimonial.png" alt="Profile Testimonial" className="rounded-[50%] w-[80px] pb-5" />
+                        <Image src="/assets/items/profile-testimonial.png" alt="Profile Testimonial" className="rounded-[50%] w-[80px] pb-5" />
                         <p className="font-bold text-sm">Ian Klein</p>
                         <p className="font-light text-sm">Digital Marketer</p>
                     </div>

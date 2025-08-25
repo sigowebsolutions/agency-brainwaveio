@@ -26,7 +26,7 @@ const contentsCards = [
 export default function Services() {
     return (
         <div className="container mx-auto">
-            <div className="flex flex-col justify-center items-center text-center gap-20 border-b py-15 my-10">
+            <div className="flex flex-col justify-center items-center text-center gap-20 border-b py-15 my-10 px-5">
 
                 <div className="flex flex-col">
                     <TitleSection title="our services"/>
@@ -34,7 +34,7 @@ export default function Services() {
                         We provide great services for<br/> our customers based on needs
                     </p>
                 </div>
-                <div className="flex justify-between gap-8">
+                <div className="flex flex-col sm:flex-row justify-between gap-8 sm:px-0">
                     {contentsCards.map((card, index) => (
                         <Card 
                         key={index} 

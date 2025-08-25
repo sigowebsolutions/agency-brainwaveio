@@ -36,7 +36,7 @@ export default function CaseStudies() {
                     </p>
                 </div>
 
-                <div className="flex gap-4">
+                <div className="flex xl:flex-row flex-col">
                     <div className="flex flex-col gap-4">
                         <Card {...contentsCards[0]} />
                         <Card {...contentsCards[2]} />

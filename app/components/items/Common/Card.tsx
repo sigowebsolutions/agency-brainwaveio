@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import React from 'react'
 interface CardProps {
     title:string
@@ -10,7 +11,7 @@ const Card = ({title,content,color,img}:CardProps) => {
     <div className={`py-10 px-5 rounded-md text-white ${color}`}>
         <div className='flex flex-col'>
             <div className="w-full flex justify-center pb-10">
-              <img className='max-h-[100px]' src={img} alt={title} />
+              <Image className='max-h-[100px]' src={img} alt={title} />
             </div>
             <p className='text-lg font-bold'>{title}</p>
             <p className='py-5 font-light'>{content}</p>

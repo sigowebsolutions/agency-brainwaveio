@@ -1,8 +1,5 @@
 import AdvantagesChooseUs from "../items/Common/AdvantagesChooseUs";
-import ButtonLink from "../items/Common/ButtonLink";
-import Card from "../items/Common/Card";
 import { CTASection } from "../items/Common/CTASection";
-import Rating from "../items/Common/Rating";
 import TitleSection from "../items/Common/TitleSection";
 
 const listObjectives = [
@@ -31,7 +28,7 @@ export default function WhyChooseUs() {
     return (
         <div className="w-full bg-blue-50">
             <div className="container mx-auto">
-                <div className="flex flex-col justify-center items-center text-center gap-20 py-15 my-10 ">
+                <div className="flex flex-col justify-center items-center text-center gap-20 py-15 px-5 my-10 ">
 
                     <div className="flex flex-col">
                         <TitleSection title="Why choose us"/>
@@ -39,7 +36,7 @@ export default function WhyChooseUs() {
                             People choose us because we <br/> serve the best for everyone
                         </p>
                     </div>
-                    <div className="grid grid-cols-2 gap-10 pb-20 border-b">
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-10 pb-20 border-b">
                         {listObjectives.map((objective,index) => (
                             <AdvantagesChooseUs key={index} icon={objective.icon} description={objective.description} title={objective.title}/>
                         ))}
